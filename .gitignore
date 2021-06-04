@@ -1,0 +1,26 @@
+# sbt
+# (may want to keep parts of 'project')
+bin/
+project/target
+target/
+build/
+
+# intellij idea
+*.log
+*.ipr
+*.iws
+.idea
+
+# mac
+.DS_Store
+
+# other?
+.scala_dependencies
+.cache
+.cache-main
+.bloop
+.metals
+
+#general
+*.cs
+/src/main/scala/chapter05/stream.sc
