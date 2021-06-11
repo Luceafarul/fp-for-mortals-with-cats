@@ -1,5 +1,3 @@
-import Dependencies._
-
 ThisBuild / scalaVersion := "2.13.5"
 ThisBuild / version := "0.1.0"
 ThisBuild / organization := "com.example"
@@ -13,9 +11,9 @@ lazy val root = (project in file("."))
   .settings(
     name := "fp-for-mortals-with-cats",
     libraryDependencies ++= Seq(
-      catsCore,
-      simulacrum,
-      scalaTest % Test
+      "org.scalatest" %% "scalatest" % "3.1.0",
+      "org.typelevel" %% "cats-core" % "2.3.0",
+      "org.typelevel" %% "simulacrum" % "1.0.0" % Test
     )
   )
 
